@@ -162,6 +162,9 @@ footer {
 }
 
 .participants-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 6px 12px;
   margin-bottom: 5px;
   background-color: #e3f2fd;
@@ -174,6 +177,28 @@ footer {
 
 .participants-list li:hover {
   background-color: #bbdefb;
+}
+
+.participant-email {
+  flex-grow: 1;
+}
+
+.delete-btn {
+  background-color: transparent;
+  color: #c62828;
+  border: none;
+  padding: 2px 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.2s, color 0.2s;
+  line-height: 1;
+}
+
+.delete-btn:hover {
+  background-color: #ffcdd2;
+  color: #b71c1c;
 }
 
 .no-participants {
